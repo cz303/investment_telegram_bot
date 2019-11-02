@@ -9,7 +9,9 @@ from settings import config as cfg
 
 
 engine = sqlalchemy.create_engine(
-    f"mysql+pymysql://bf96087e84c5d4:b4d096d3@eu-cdbr-west-02.cleardb.net/heroku_6882c2094ce1891?reconnect=true",
+    f"mysql+pymysql://"
+    f"bf96087e84c5d4:b4d096d3"
+    f"@{cfg.DATABASE_HOST}/eu-cdbr-west-02.cleardb.net",
     echo=False, pool_pre_ping=True
 )
 meta = MetaData(bind=engine, reflect=True)
