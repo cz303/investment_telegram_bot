@@ -6,21 +6,18 @@ DEBUG = True
 set_up_logging(level=logging.DEBUG)
 
 # bot
-PRODUCTION_TOKEN = '428370285:AAEfjY1o6DyLp1ysrz-OQBtgFYBwlmS-d1g'
-TEST_TOKEN = '428474365:AAGhkCJc3_mhKALgMX-4my45w53yRpxwAk8'
+TOKEN = os.environ['1065557544:AAEzzrCLkbLD9ikZDhuJ2_vV80L316frYbw']
+TEST_TOKEN = '979472521:AAHW7Csof_4gGjhEx49luK4gkBYwry0ABSE'
 API_TOKEN = TEST_TOKEN if DEBUG else PRODUCTION_TOKEN
 BOT = 'mycryptotestobot' if DEBUG else 'cryptosreda_bot'
 
 # botan
-BOTAN_KEY = 'ca6f01fd-8b9f-40f5-a8bc-1551cf93ee6b'
+BOTAN_KEY = 'bf7b036e-ed0b-40ea-bba2-ce54b50dcc73'
 
 # webhook
-WEBHOOK_HOST = '54.37.233.220'  # old '95.172.133.74'
-WEBHOOK_PORT = 8443  # 443, 80, 88 or 8443 (port need to be 'open')
+WEBHOOK_HOST = 'https://bitpif.herokuapp.com'  # old '95.172.133.74'
+WEBAPP_PORT = os.environ.get('PORT')  # 443, 80, 88 or 8443 (port need to be 'open')
 WEBHOOK_LISTEN = '0.0.0.0'  # In some VPS you may need to put here the IP addr
-
-WEBHOOK_SSL_CERT = 'cert/cert.pem'  # Path to the ssl certificate
-WEBHOOK_SSL_PRIV = 'cert/private.key'  # Path to the ssl private key
 
 WEBHOOK_URL_PATH = f"{API_TOKEN}/"
 WEBHOOK_URL_BASE = f"https://{WEBHOOK_HOST}:{WEBHOOK_PORT}/{WEBHOOK_URL_PATH}"
@@ -29,18 +26,16 @@ WEBHOOK = {
     'listen': WEBHOOK_HOST,
     'port': WEBHOOK_PORT,
     'url_path': WEBHOOK_URL_PATH,
-    'key': WEBHOOK_SSL_PRIV,
-    'cert': WEBHOOK_SSL_CERT,
 }
 
 # database
-DATABASE_NAME = 'myfund' if DEBUG else 'myfund'
-DATABASE_USER = 'myfund'
-DATABASE_HOST = 'localhost'
-DATABASE_PASSWORD = 'SFM09WfZjuRM8UhrH0PzXiUmwNIiMiNM'
+DATABASE_NAME = 'heroku_6882c2094ce1891' if DEBUG else 'heroku_6882c2094ce1891'
+DATABASE_USER = 'bf96087e84c5d4'
+DATABASE_HOST = 'eu-cdbr-west-02.cleardb.net'
+DATABASE_PASSWORD = 'b4d096d3'
 
 # groups
-ADMINS = [202628185, 272418334]
+ADMINS = [677805757]
 
 # nodes
 # TODO: сменить порты!!!!!!!!!!!!!
