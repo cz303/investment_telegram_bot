@@ -10,8 +10,8 @@ from settings import config as cfg
 
 engine = sqlalchemy.create_engine(
     f"mysql+pymysql://"
-    f"test:XzXQDNqgTiAu3gw6ILfN3xAUVIZCybKa"
-    f"@{cfg.DATABASE_HOST}/myfund_test?charset=utf8&",
+    f"bf96087e84c5d4:b4d096d3"
+    f"@{cfg.DATABASE_HOST}/eu-cdbr-west-02.cleardb.net?charset=utf8&",
     echo=False, pool_pre_ping=True
 )
 meta = MetaData(bind=engine, reflect=True)
