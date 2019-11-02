@@ -2,14 +2,14 @@ import sys
 import logging
 
 from settings import config as cfg
-from core.manager import manager
+from core.manager import Manager
 
 logger = logging.getLogger('bot')
 
 if __name__ == '__main__':
     # DEBUG = True if '-debug' in sys.argv else False
 
-    manager = manager(token=cfg.API_TOKEN)
+    manager = Manager(token=cfg.API_TOKEN)
 
     if cfg.DEBUG:
         logging.info("SetUp Polling")
