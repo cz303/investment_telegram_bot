@@ -15,7 +15,7 @@ BOT = 'bitpif_bot' if DEBUG else 'BitpifBot'
 BOTAN_KEY = 'bf7b036e-ed0b-40ea-bba2-ce54b50dcc73'
 
 # webhook
-WEBHOOK_HOST = 'https://bitpif.herokuapp.com'  # old '95.172.133.74'
+WEBHOOK_HOST = 'bitpif.herokuapp.com'  # old '95.172.133.74'
 WEBHOOK_PORT = 'PORT'  # 443, 80, 88 or 8443 (port need to be 'open')
 WEBHOOK_LISTEN = '0.0.0.0'  # In some VPS you may need to put here the IP addr
 
