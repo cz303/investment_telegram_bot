@@ -2,7 +2,7 @@ import sys
 import logging
 
 from settings import config as cfg
-from core.manager import Manager
+from core.manager import manager
 
 logger = logging.getLogger('bot')
 
