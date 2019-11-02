@@ -9,7 +9,7 @@ set_up_logging(level=logging.DEBUG)
 PRODUCTION_TOKEN = '1065557544:AAEzzrCLkbLD9ikZDhuJ2_vV80L316frYbw'
 TEST_TOKEN = '979472521:AAHW7Csof_4gGjhEx49luK4gkBYwry0ABSE'
 API_TOKEN = TEST_TOKEN if DEBUG else PRODUCTION_TOKEN
-BOT = 'mycryptotestobot' if DEBUG else 'cryptosreda_bot'
+BOT = 'bitpif_bot' if DEBUG else 'BitpifBot'
 
 # botan
 BOTAN_KEY = 'bf7b036e-ed0b-40ea-bba2-ce54b50dcc73'
