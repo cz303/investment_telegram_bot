@@ -19,4 +19,4 @@ urllib3
 python-telegram-bot
 sqlalchemy
 pymysql
-mysql-python
+mysqlclient
