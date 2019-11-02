@@ -9,7 +9,7 @@ logger = logging.getLogger('bot')
 if __name__ == '__main__':
     # DEBUG = True if '-debug' in sys.argv else False
 
-    manager = Manager(token=cfg.API_TOKEN)
+    manager = manager(token=cfg.API_TOKEN)
 
     if cfg.DEBUG:
         logging.info("SetUp Polling")
